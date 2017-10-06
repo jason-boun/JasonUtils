@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ProgressBar
+            android:id="@+id/pb_clean_cache_progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_clean_cache_scan_info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="扫描状态"
+            android:textColor="#ff66ff" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_weight="1000"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/ll_clean_cache_list_show"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_clean_cache_loading"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:visibility="invisible" >
+
+            <ProgressBar
+                style="@style/my_pb_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <Button
+        android:onClick="cleanAll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="清理缓存" />
+
+</LinearLayout>

@@ -1,0 +1,161 @@
+package com.jason.jasonutils.authority;
+
+import java.util.Arrays;
+
+import android.app.Activity;
+import android.content.Context;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
+import android.util.Log;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
+import com.jason.jasonutils.R;
+
+import com.facebook.Request;
+import com.facebook.Request.GraphUserCallback;
+import com.facebook.Response;
+import com.facebook.Session;
+import com.facebook.SessionLoginBehavior;
+import com.facebook.SessionState;
+import com.facebook.model.GraphUser;
+
+public class UseFacebookAccountLogin extends Activity implements OnClickListener {
+	
+	private Button bt_facebook_login;
+	
+	private String requestFieldStr = "name,email,username";
+	private SessionStatusCallback statusCallback;
+	private String resultEmail;
+	private String resultName;
+	private Activity ctx;
+	private static final int AUTHOR_SUCCESS = 10;
+	private static final int NET_ERROR = 20;
+	
+	
+	private Handler handler = new Handler(){
+		@Override
+		public void handleMessage(Message msg) {
+			super.handleMessage(msg);
+			switch (msg.what) {
+			case NET_ERROR:
+				Toast.makeText(ctx, "请检查网络", 0).show();
+				break;
+			case AUTHOR_SUCCESS:
+				//TODO：处理FaceBook授权成功之后的业务。
+				Log.i("哈哈", "授权成功");
+				break;
+			}
+		}
+	};
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.use_facebook_account_login_activity);
+		init();
+	}
+
+	private void init() {
+		bt_facebook_login = (Button) findViewById(R.id.bt_facebook_login);
+		bt_facebook_login.setOnClickListener(this);
+		ctx = UseFacebookAccountLogin.this;
+		statusCallback = new SessionStatusCallback();
+	}
+
+	@Override
+	public void onClick(View v) {
+		switch (v.getId()) {
+		case com.jason.jasonutils.R.id.bt_facebook_login:
+			myLogin();
+			break;
+		}
+	}
+
+	/**
+	 * 授权FaceBook登录操作
+	 */
+	private void myLogin() {
+		if(isNetworkAvailable(ctx)){
+			getFbAuthLoginData();
+		}else{
+			handler.sendEmptyMessage(NET_ERROR);
+		}
+	}
+	
+	/**
+	 * 通过SDK访问FaceBook服务器，授权该账号登录
+	 */
+    private void getFbAuthLoginData() {
+    	new Thread(){
+			public void run() {
+				Session session = Session.getActiveSession();
+				if(session !=null){
+					session.close();
+					session = null;
+				}
+				session = new Session(ctx);
+				if (session.getState().equals(SessionState.CREATED_TOKEN_LOADED)) {
+					session.openForRead(new Session.OpenRequest(ctx).setPermissions(Arrays.asList(requestFieldStr)));//设置需要获取的字段
+		        }
+				Session.setActiveSession(session);
+				session = Session.getActiveSession();
+				if (!session.isOpened() && !session.isClosed()) {
+			       session.openForRead(new Session.OpenRequest(ctx).setCallback(statusCallback).setLoginBehavior(SessionLoginBehavior.SUPPRESS_SSO));//设置为单点登陆
+			    } 
+			};
+		}.start();
+	}
+
+	private class SessionStatusCallback implements Session.StatusCallback {
+        @Override
+        public void call(Session session, SessionState state, Exception exception) {
+        	if(state.isOpened()){
+        		Request request = Request.newMeRequest(session, new GraphUserCallback() {
+        		    @Override
+        		    public void onCompleted(GraphUser user, Response response) {
+        		    	  if (user != null) {
+                			  resultEmail = (String)user.asMap().get("email");
+                			  resultName = user.getUsername();
+
+                			  if(Utils.isStrEmpty(resultEmail) && Utils.isStrEmpty(resultName)){
+                				  CustomToast.makeText(ctx, getString(R.string.failed_get_acount), Toast.LENGTH_SHORT).show();  
+                			  }else{
+                				 handler.sendEmptyMessage(AUTHOR_SUCCESS);
+                			  }
+                			  releaseFbResource();
+                          }
+        		    }
+        		});
+        		Bundle parameters = new Bundle();
+        		parameters.putString("fields", requestFieldStr);
+       		    request.setParameters(parameters);
+        		Request.executeBatchAsync(request);
+        	}	        	 	
+        }
+     }
+    
+	/**
+	 * 释放FaceBook链接资源
+	 */
+    public void releaseFbResource(){
+    	Session session = Session.getActiveSession();
+        if (!session.isClosed()) {
+            session.closeAndClearTokenInformation();
+        }
+    }
+    public static boolean isNetworkAvailable(Context context){
+    	ConnectivityManager cwjManager=(ConnectivityManager)context.getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo info = cwjManager.getActiveNetworkInfo();
+        if(info!=null&&info.isConnected()){
+        	return true;
+        }else{
+        	return false;
+        }
+     }
+}

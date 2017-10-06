@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menudemo_delete_one_msg"
+        android:title="删除一条msg记录"/>
+    <item
+        android:id="@+id/menudemo_delete_all_msg"
+        android:title="删除全部msg记录"/>
+
+</menu>

@@ -1,0 +1,321 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp" >
+
+        <LinearLayout
+            android:id="@+id/jasonutils_main_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/bt_toast"
+                style="@style/main_wrapcontent"
+                android:text="弹出自定义土司" />
+
+            <Button
+                android:id="@+id/bt_dimen"
+                style="@style/main_wrapcontent"
+                android:text="二维码工具" />
+
+            <Button
+                android:id="@+id/bt_webView"
+                style="@style/main_wrapcontent"
+                android:text="打开百度" />
+            
+            <Button
+                android:id="@+id/bt_jump_popupwindown"
+                style="@style/main_wrapcontent"
+                android:text="popwindown" />
+
+            <Button
+                android:id="@+id/bt_fix_picture"
+                style="@style/main_wrapcontent"
+                android:text="图片合成" />
+
+            <Button
+                android:id="@+id/bt_border_picture"
+                style="@style/main_wrapcontent"
+                android:text="图片加边框" />
+
+            <Button
+                android:id="@+id/bt_progress_onkeydown"
+                style="@style/main_wrapcontent"
+                android:text="进度条和返回键" />
+
+            <Button
+                android:id="@+id/bt_choosecut_pic"
+                style="@style/main_wrapcontent"
+                android:text="选择图片" />
+
+            <Button
+                android:id="@+id/bt_gridview_demo"
+                style="@style/main_wrapcontent"
+                android:text="gridViewDemo" />
+
+            <Button
+                android:id="@+id/bt_getX_getRawX"
+                style="@style/main_wrapcontent"
+                android:text="按钮getx和getRawX" />
+
+            <Button
+                android:id="@+id/bt_mcwill_status"
+                style="@style/main_wrapcontent"
+                android:text="监听mcwill来电" />
+
+            <Button
+                android:id="@+id/bt_send_message"
+                style="@style/main_wrapcontent"
+                android:text="发送短信" />
+
+            <Button
+                android:id="@+id/bt_send_mcwill_msg"
+                style="@style/main_wrapcontent"
+                android:text="TestDemo" />
+
+            <Button
+                android:id="@+id/bt_read_latest_msg"
+                style="@style/main_wrapcontent"
+                android:text="读取收件箱最新一条短信" />
+
+            <Button
+                android:id="@+id/bt_send_notification"
+                style="@style/main_wrapcontent"
+                android:text="进入notification发送页面" />
+
+            <Button
+                android:id="@+id/bt_operate_database"
+                style="@style/main_wrapcontent"
+                android:text="数据库操作" />
+
+            <Button
+                android:id="@+id/bt_timer_use"
+                style="@style/main_wrapcontent"
+                android:text="各种计时器Demo" />
+
+            <Button
+                android:id="@+id/bt_check_network"
+                style="@style/main_wrapcontent"
+                android:text="网络检测" />
+
+            <Button
+                android:id="@+id/bt_send_reboot_broadcast"
+                style="@style/main_wrapcontent"
+                android:text="发送开机启动广播" />
+
+            <Button
+                android:id="@+id/bt_pwoermanager_demo"
+                style="@style/main_wrapcontent"
+                android:text="powermanager示例" />
+
+            <Button
+                android:id="@+id/bt_service_demo"
+                style="@style/main_wrapcontent"
+                android:text="服务绑定示例" />
+
+            <Button
+                android:id="@+id/bt_dialog_demo"
+                style="@style/main_wrapcontent"
+                android:text="各种Dialog演示" />
+
+            <Button
+                android:id="@+id/bt_filter_demo"
+                style="@style/main_wrapcontent"
+                android:text="过滤器Demo" />
+
+            <Button
+                android:id="@+id/bt_sort_demo"
+                style="@style/main_wrapcontent"
+                android:text="排序Demo" />
+
+            <Button
+                android:id="@+id/bt_floatlayer_demo"
+                style="@style/main_wrapcontent"
+                android:text="浮层效果Demo" />
+
+            <Button
+                android:id="@+id/bt_asyncqueryhandler_demo"
+                style="@style/main_wrapcontent"
+                android:text="AsyncQueryHandlerDemo" />
+
+            <Button
+                android:id="@+id/bt_adapter_demo"
+                style="@style/main_wrapcontent"
+                android:text="AdapterDemo" />
+
+            <Button
+                android:id="@+id/bt_search_framework_demo"
+                style="@style/main_wrapcontent"
+                android:text="SearchableFrameworkDemo" />
+
+            <Button
+                android:id="@+id/bt_actionbar_demo"
+                style="@style/main_wrapcontent"
+                android:text="ActionBarDemo" />
+
+            <Button
+                android:id="@+id/bt_sharedpreference_setapi_demo"
+                style="@style/main_wrapcontent"
+                android:text="ReadSPsetAPIDemo" />
+
+            <Button
+                android:id="@+id/bt_mediaplayer_demo"
+                style="@style/main_wrapcontent"
+                android:text="多媒体播放Demo" />
+            <Button
+                android:id="@+id/bt_surfaceview_demo"
+                style="@style/main_wrapcontent"
+                android:text="SurfaceViewDemo" />
+            <Button
+                android:id="@+id/bt_camera_demo"
+                style="@style/main_wrapcontent"
+                android:text="CameraDemo" />
+            <Button
+                android:id="@+id/bt_xmlserialparser_demo"
+                style="@style/main_wrapcontent"
+                android:text="xml序列和普洱解析" />
+            <Button
+                android:id="@+id/bt_linux_read_write_mode_demo"
+                style="@style/main_wrapcontent"
+                android:text="linux系统文件读写权限Demo" />
+            <Button
+                android:id="@+id/bt_system_sms_callrecord_changed_demo"
+                style="@style/main_wrapcontent"
+                android:text="系统短信通话记录变化监听" />
+            <Button
+                android:id="@+id/bt_operate_syscontacts_demo"
+                style="@style/main_wrapcontent"
+                android:text="批量删除添加系统联系人" />
+            <Button
+                android:id="@+id/bt_location_demo"
+                style="@style/main_wrapcontent"
+                android:text="地理位置Demo" />
+            <Button
+                android:id="@+id/bt_worker_provider_demo"
+                style="@style/main_wrapcontent"
+                android:text="自定义provider操作数据库" />
+            <Button
+                android:id="@+id/bt_select_contact_sendmsg_demo"
+                style="@style/main_wrapcontent"
+                android:text="发短信跳转选择联系人" />
+            <Button
+                android:id="@+id/bt_intent_demo"
+                style="@style/main_wrapcontent"
+                android:text="intent接口Demo" />
+            <Button
+                android:id="@+id/bt_picture_operate_demo"
+                style="@style/main_wrapcontent"
+                android:text="图片多媒体操作Demo" />
+            <Button
+                android:id="@+id/bt_slide_cut_listview_demo"
+                style="@style/main_wrapcontent"
+                android:text="仿微信List条目滑动删除Demo" />
+            <Button
+                android:id="@+id/bt_camera_operate_demo"
+                style="@style/main_wrapcontent"
+                android:text="相机操作Demo" />
+            <Button
+                android:id="@+id/bt_custom_view_demo"
+                style="@style/main_wrapcontent"
+                android:text="自定义控件Demo" />
+            <Button
+                android:id="@+id/bt_edittext_view_demo"
+                style="@style/main_wrapcontent"
+                android:text="EditText属性Demo" />
+            <Button
+                android:id="@+id/bt_touch_demo"
+                style="@style/main_wrapcontent"
+                android:text="手指滑动Demo" />
+            <Button
+                android:id="@+id/bt_baidu_map_demo"
+                style="@style/main_wrapcontent"
+                android:text="百度地图Demo" />
+            <Button
+                android:id="@+id/bt_menu_demo"
+                style="@style/main_wrapcontent"
+                android:text="菜单MenuDemo" />
+            <Button
+                android:id="@+id/bt_applock_manager"
+                style="@style/main_wrapcontent"
+                android:text="程序锁管理界面" />
+            <Button
+                android:id="@+id/bt_comingcall_address_manager"
+                style="@style/main_wrapcontent"
+                android:text="来电归属地显示管理Demo" />
+            <Button
+                android:id="@+id/bt_black_number_demo"
+                style="@style/main_wrapcontent"
+                android:text="电话号码黑名单Demo" />
+            <Button
+                android:id="@+id/bt_lrucache_demo"
+                style="@style/main_wrapcontent"
+                android:text="图片缓存LruCache类Demo" />
+            <Button
+                android:id="@+id/bt_spinner_demo"
+                style="@style/main_wrapcontent"
+                android:text="Spinner Demo" />
+            <Button
+                android:id="@+id/bt_sms_operate_demo"
+                style="@style/main_wrapcontent"
+                android:text="回调处理短信备份还原Demo" />
+            <Button
+                android:id="@+id/bt_app_manager_demo"
+                style="@style/main_wrapcontent"
+                android:text="应用程序管理Demo" />
+            <Button
+                android:id="@+id/bt_process_manager_demo"
+                style="@style/main_wrapcontent"
+                android:text="进程管理Demo" />
+            <Button
+                android:id="@+id/bt_app_lock_demo"
+                style="@style/main_wrapcontent"
+                android:text="程序锁Demo" />
+            <Button
+                android:id="@+id/bt_clean_app_cache_demo"
+                style="@style/main_wrapcontent"
+                android:text="清理APP缓存Demo" />
+            <Button
+                android:id="@+id/bt_tabhost_demo"
+                style="@style/main_wrapcontent"
+                android:text="TabHost Demo" />
+            <Button
+                android:id="@+id/bt_fragment_demo"
+                style="@style/main_wrapcontent"
+                android:text="Fragment Demo" />
+            <Button
+                android:id="@+id/bt_zip_demo"
+                style="@style/main_wrapcontent"
+                android:text="压缩解压流 Demo" />
+            <Button
+                android:id="@+id/bt_simle_demo"
+                style="@style/main_wrapcontent"
+                android:text="表情展示 Demo" />
+             <Button
+                android:id="@+id/bt_scrowViewListView_demo"
+                style="@style/main_wrapcontent"
+                android:text="scrowViewListViewDemo" />
+             <Button
+                android:id="@+id/bt_litehttp_demo"
+                style="@style/main_wrapcontent"
+                android:text="opensource_litehttp_demo" />
+             <Button
+                android:id="@+id/bt_listview_adapter_type_demo"
+                style="@style/main_wrapcontent"
+                android:text="listview_adapter_type_demo" />
+             <Button
+                android:id="@+id/bt_listview_limited_demo"
+                style="@style/main_wrapcontent"
+                android:text="listview_limited_demo" />
+             <Button
+                android:id="@+id/bt_pull_down_refresh_demo"
+                style="@style/main_wrapcontent"
+                android:text="下拉刷新Demo" />
+             <Button
+                android:id="@+id/cmb_pay_demo"
+                style="@style/main_wrapcontent"
+                android:text="一网通支付" />
+        </LinearLayout>
+
+</ScrollView>

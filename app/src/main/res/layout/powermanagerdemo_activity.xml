@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_powerdemo_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    android:orientation="vertical" >
+    
+    <Button 
+        android:id="@+id/bt_isscreen_on"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="检测屏幕状态"
+        />
+    <Button 
+        android:id="@+id/bt_goto_sleep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="睡觉"
+        />
+    <Button 
+        android:id="@+id/bt_reboot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="重启设备"
+        />
+    <Button 
+        android:id="@+id/bt_wakeup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="唤醒设备"
+        />
+    <Button 
+        android:id="@+id/bt_wakelock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="wakelock演示"
+        />
+    <Button 
+        android:id="@+id/bt_check_whetherlock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="检测是否被锁定"
+        />
+
+</LinearLayout>

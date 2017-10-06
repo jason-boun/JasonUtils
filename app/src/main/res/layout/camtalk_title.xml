@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+    android:background="@drawable/main_title"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/btn_back_bg"
+        android:clickable="true"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerInside"
+        android:src="@drawable/back" />
+
+    <TextView
+        android:id="@+id/shuxian"
+        android:layout_width="2dp"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/iv_back"
+        android:background="@drawable/shuxian" >
+    </TextView>
+
+    <TextView
+        style="@style/main_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/shuxian"
+        android:gravity="center"
+        android:paddingRight="55dp"
+        android:text="二维码" />
+
+    <Button
+        android:id="@+id/bt_more_operate"
+        android:layout_width="wrap_content"
+        android:layout_height="14dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="5.0dip"
+        android:background="@drawable/dimen_more_bg"
+        android:clickable="true"
+        android:scaleType="centerInside" />
+
+    <TextView
+        android:id="@+id/shuxian1"
+        android:layout_width="2dp"
+        android:layout_height="fill_parent"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/bt_more_operate"
+        android:background="@drawable/shuxian" >
+    </TextView>
+
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+    
+    <Button 
+        android:layout_marginTop="15dp"
+        android:id="@+id/bt_camera_usesys_camera_getpic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="拍照"
+        />
+    
+    <ImageView 
+        android:padding="20dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/iv_camera_usesys_camera_showpic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/app_tool_10"
+        
+        />
+    
+
+</LinearLayout>

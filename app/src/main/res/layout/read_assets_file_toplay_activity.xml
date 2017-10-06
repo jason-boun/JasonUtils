@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/bt_select_sys_ringtone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="选择系统铃声" />
+    <Button
+        android:id="@+id/bt_assets_file_to_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="播放语音" />
+    <Button
+        android:id="@+id/bt_assets_file_to_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="停止播放 " />
+    <Button
+        android:id="@+id/bt_assets_file_switch_audiomode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="切换播放模式" />
+
+</LinearLayout>

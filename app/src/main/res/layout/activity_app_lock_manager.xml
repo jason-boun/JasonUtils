@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:jason = "http://schemas.android.com/apk/res/com.jason.jasonutils"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+        
+    <com.jason.jasonutils.customview.MyCustomSettingView
+        android:id="@+id/cv_applock_service_switch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        jason:content_off="已经关闭电话短信拦截功能"
+        jason:content_on="已经打开电话短信拦截功能"
+        jason:title="电话短信拦截管理" />
+
+    <Button
+        android:id="@+id/bt_set_lock_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="setPwd"
+        android:text="设置密码" />
+
+    <Button
+        android:id="@+id/bt_app_lock_manager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="manager"
+        android:text="管理程序锁" />
+
+</LinearLayout>

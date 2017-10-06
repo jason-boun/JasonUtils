@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_servicedemo_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btnStartService"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Service" />
+
+    <Button
+        android:id="@+id/btnBindService"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Bind Service" />
+
+    <Button
+        android:id="@+id/btnCallServiceMethod"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Call Service Method" />
+
+    <Button
+        android:id="@+id/btnUnbindService"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Unbind Service" />
+
+    <Button
+        android:id="@+id/btnStopService"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Stop Service" />
+    <Button
+        android:id="@+id/bt_aidlservice_demo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Aidl Service Demo" />
+
+</LinearLayout>

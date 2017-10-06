@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jason.jasonutils"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:targetPackage="com.jason.jasonutils" />
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <!-- 定义其他APP访问该应用时候的权限 -->
+    <permission
+        android:name="com.jason.jasonutils.key"
+        android:icon="@drawable/app_tool_6"
+        android:label="jasonutils_key" >
+    </permission>
+
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" /> -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!-- gps -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+    <!-- <uses-permission android:name="android.permission.WRITE_APN_SETTINGS" /> -->
+
+    <application
+        android:name="MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/app_tool_13"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+        <uses-library android:name="android.test.runner" />
+
+        <activity
+            android:name="com.jason.jasonutils.splash.SplashActivity"
+            android:icon="@drawable/app_tool_2"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value="com.jason.jasonutils.searchable.MySearchDemoActivity" >
+            </meta-data>
+        </activity>
+        <activity
+            android:name="com.jason.jasonutils.JasonUtilsMainActivity"
+            android:launchMode="singleTask" />
+        <activity android:name="com.jason.jasonutils.test.TestDemo" />
+        <activity android:name="com.jason.jasonutils.dimesionalcode.TestActivity" />
+        <activity android:name="com.jason.jasonutils.dimesionalcode.CameraRenderActivity" />
+        <activity android:name="com.jason.jasonutils.alertdialog.CustomizedProgressDialogActivity" />
+        <activity android:name="com.jason.jasonutils.fixpicture.ImageBorderActivity" />
+        <activity android:name="com.jason.jasonutils.fixpicture.FixPictureActivity" />
+        <activity android:name="com.jason.jasonutils.popupwindown.PopupWindownDemo" />
+        <activity android:name="com.jason.jasonutils.fixpicture.ChooseCutPic_Activity" />
+        <activity android:name="com.jason.jasonutils.gridview.GridViewDemoListActivity" />
+        <activity android:name="com.jason.jasonutils.gridview.GridViewSimpleDemo" />
+        <activity android:name="com.jason.jasonutils.gridview.complex.PersonListActivity" />
+        <activity android:name="com.jason.jasonutils.gridview.complex.GridViewComplexDemo" />
+        <activity android:name="com.jason.jasonutils.gridview.singleline.GridViewComplexSingleLineDemo" />
+        <activity android:name="com.jason.jasonutils.gridview.DifferentgetXgetRawX" />
+        <activity android:name="com.jason.jasonutils.componentdemo.McWillReceiverDemo" />
+        <activity android:name="com.jason.jasonutils.sms.SendMessageDemo" />
+        <activity android:name="com.jason.jasonutils.gridview.SingleLineGridViewSimpleDemo" />
+        <activity android:name="com.jason.jasonutils.sms.ReceiveMessageDemo" />
+        <activity android:name="com.jason.jasonutils.notification.NotificationDemo" />
+        <activity android:name="com.jason.jasonutils.db.DbTestDemo" />
+        <activity android:name="com.jason.jasonutils.timer.ChronometerDemo" />
+        <activity android:name="com.jason.jasonutils.timer.TimerTaskDemo" />
+        <activity android:name="com.jason.jasonutils.network.NetWorkTestDemo" />
+        <activity android:name="com.jason.jasonutils.componentdemo.SendRebootBroadcastActivity" />
+        <activity android:name="com.jason.jasonutils.powermanager.PowerMangerDemo" />
+        <activity android:name="com.jason.jasonutils.service.BindMyServiceDemo" />
+        <activity android:name="com.jason.jasonutils.service.complexservice.BindAidlServiceDemo" />
+        <activity android:name="com.jason.jasonutils.dialog.DialogDemo" />
+        <activity android:name="com.jason.jasonutils.timer.TimerDemoListActivity" />
+        <activity android:name="com.jason.jasonutils.timer.AlarmManagerDemo" />
+        <activity android:name="com.jason.jasonutils.timer.HandlerDemo" />
+        <activity android:name="com.jason.jasonutils.asynctask.AsyncTaskDemo" />
+        <activity android:name="com.jason.jasonutils.filter.FilterDemoActivity" />
+        <activity android:name="com.jason.jasonutils.floatlayerfunction.FloatLayer2IntroduceFunction" />
+        <activity android:name="com.jason.jasonutils.handler.AsyncQueryHandlerDemo" />
+        <activity android:name="com.jason.jasonutils.adapterdemo.AdapterDemoActivity" />
+        <activity android:name="com.jason.jasonutils.adapterdemo.ArrayAdapterDemo" />
+        <activity android:name="com.jason.jasonutils.adapterdemo.ArrayAdapterDemo2" />
+        <activity android:name="com.jason.jasonutils.adapterdemo.SimpleAdatperDemo" />
+        <activity android:name="com.jason.jasonutils.adapterdemo.SimpleCursorAdapterDemo" />
+        <activity android:name="com.jason.jasonutils.adapterdemo.BaseAdapterDemo" />
+        <activity android:name="com.jason.jasonutils.adapterdemo.CursorAdapterDemo" />
+        <activity android:name="com.jason.jasonutils.actionbar.ActionBarDemo" />
+        <activity android:name="com.jason.jasonutils.mediaplayer.AudioPlayerDemo" />
+        <activity android:name="com.jason.jasonutils.sharedpreference.SharedPreferenceSetAPIDemo" />
+        <activity android:name="com.jason.jasonutils.mediaplayer.MediaPlayerDemo" />
+        <activity android:name="com.jason.jasonutils.mediaplayer.VideoPlayerDemo" />
+        <activity android:name="com.jason.jasonutils.surfaceview.SurfaceViewDemo" />
+        <activity android:name="com.jason.jasonutils.mediaplayer.SensorMediaDemo" />
+        <activity android:name="com.jason.jasonutils.camera.MyCameraDemo" />
+        <activity android:name="com.jason.jasonutils.camera.CameraDemoEarlier" />
+        <activity android:name="com.jason.jasonutils.xmlparser.XmlSerialParserActivity" />
+        <activity android:name="com.jason.jasonutils.iostream.LinuxReadWriteModeDemo" />
+        <activity android:name="com.jason.jasonutils.sms.SystemCallRecordSmsChangeddemoActivity" />
+        <activity android:name="com.jason.jasonutils.contact.OperateSysContactsActivity" />
+        <activity android:name="com.jason.jasonutils.location.LocationDemoListActivity" />
+        <activity android:name="com.jason.jasonutils.location.CompassDemoActivity" />
+        <activity android:name="com.jason.jasonutils.provider.WorkerTextActivity" />
+        <activity android:name="com.jason.jasonutils.sms.sendmsg.SelectContactToSendMsgActivity" />
+        <activity android:name="com.jason.jasonutils.sms.sendmsg.SelectContactActivity" />
+        <activity android:name="com.jason.jasonutils.intent.IntentDemoActivity" />
+        <activity android:name="com.jason.jasonutils.scroller.ScrollerDemoActivity" />
+        <activity android:name="com.jason.jasonutils.pictureoperate.PictureOperationDemoActivity" />
+        <activity android:name="com.jason.jasonutils.pictureoperate.BitmapOptionDemo" />
+        <activity android:name="com.jason.jasonutils.pictureoperate.TakePictureFromGallary" />
+        <activity android:name="com.jason.jasonutils.slidecutlistview.SlideCutListViewDemoActivity" />
+        <activity android:name="com.jason.jasonutils.slidecutlistview.ItemActivity" />
+        <activity android:name="com.jason.jasonutils.pictureoperate.BitmapMatrixDemo" />
+        <activity android:name="com.jason.jasonutils.camera.syscamera.UseSysCameraDemoActivity" />
+        <activity android:name="com.jason.jasonutils.camera.mycamera.BuildMyCameraDemo" />
+        <activity android:name="com.jason.jasonutils.camera.CameraDemoActivity" />
+        <activity android:name="com.jason.jasonutils.customview.CustomViewDemoShowActivity" />
+        <activity android:name="com.jason.jasonutils.widgetcomponent.EditTextDemo" />
+        <activity android:name="com.jason.jasonutils.pwdlock.FirstSetPwdLockActivity" />
+        <activity
+            android:name="com.jason.jasonutils.pwdlock.PwdLockActivity"
+            android:launchMode="singleInstance" />
+        <activity android:name="com.jason.jasonutils.pwdlock.PwdLockManager" />
+        <activity android:name="com.jason.jasonutils.touch.TouchActivityOne" />
+        <activity android:name="com.jason.jasonutils.touch.TouchActivityTwo" />
+        <activity android:name="com.jason.jasonutils.touch.TouchActivityThree" />
+        <activity android:name="com.jason.jasonutils.popupwindown.SelectListActivity" />
+        <activity
+            android:name="com.jason.jasonutils.alertdialog.AlertDialogActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyAlertDialog" />
+        <activity android:name="com.jason.jasonutils.map.BaiduMapDemoList" />
+        <activity android:name="com.jason.jasonutils.map.BaiduMapLocationShareActivity" />
+        <activity android:name="com.jason.jasonutils.baidumap.MyMapDemoAcitvity" />
+        <activity android:name="com.jason.jasonutils.baidumap.HelloBaiduMap" />
+        <activity android:name="com.jason.jasonutils.baidumap.OverlayActivity" />
+        <activity android:name="com.jason.jasonutils.baidumap.MyLocationActivity" />
+
+        <!-- baidu mapSDK Demo -->
+        <activity android:name="com.jason.jasonutils.map.BaiduMapActivity" />
+        <activity android:name="com.jason.jasonutils.map.HelloWorld" />
+        <activity android:name="com.jason.jasonutils.map.LayerDemo" />
+        <activity android:name="com.jason.jasonutils.map.OverlayDemo" />
+        <activity android:name="com.jason.jasonutils.map.MyLocationOverlayDemo" />
+        <activity android:name="com.jason.jasonutils.map.ItemOverlayDemo" />
+        <activity android:name="com.jason.jasonutils.map.SearchPOI" />
+        <activity android:name="com.jason.jasonutils.map.SearchNearBy" />
+        <activity android:name="com.jason.jasonutils.map.SearchInCity" />
+        <activity android:name="com.jason.jasonutils.map.SearchDriving" />
+        <activity android:name="com.jason.jasonutils.map.SearchWalk" />
+        <activity android:name="com.jason.jasonutils.map.SearchTransit" />
+        <activity android:name="com.jason.jasonutils.map.SearchAddr" />
+        <activity android:name="com.jason.jasonutils.map.SearchBusLine" />
+        <activity android:name="com.jason.jasonutils.map.SearchKey" />
+        <activity android:name="com.jason.jasonutils.map.SearchUrl" />
+        <activity android:name="com.jason.jasonutils.menu.MenuDemoActivity" />
+        <activity android:name="com.jason.jasonutils.comingcalladdress.PhoneNumberManager" />
+        <activity android:name="com.jason.jasonutils.comingcalladdress.DragAddressViewActivity" />
+        <activity android:name="com.jason.jasonutils.blacknumber.BlackNumberFunctionListActivity" />
+        <activity android:name="com.jason.jasonutils.blacknumber.ShowOptimizeActivity" />
+        <activity android:name="com.jason.jasonutils.blacknumber.ShowBatchLoadActivity" />
+        <activity
+            android:name="com.jason.jasonutils.blacknumber.ShowPageLoadActivity"
+            android:launchMode="singleTop" />
+        <activity android:name="com.jason.jasonutils.lrucatche.ShowPcitureActivity" />
+        <activity android:name="com.jason.jasonutils.spinner.SpinnerDemoActivity" />
+        <activity android:name="com.jason.jasonutils.sms.backup.BackupRebackMsgDemo" />
+        <activity android:name="com.jason.jasonutils.expandablelistview.ExpandableListViewDemoActivity" />
+        <activity android:name="com.jason.jasonutils.appmanager.AppManagerActivity" />
+        <activity android:name="com.jason.jasonutils.processmanager.ProcessManagerActivity" />
+        <activity android:name="com.jason.jasonutils.applockmanager.AppLockListActivity" />
+        <activity android:name="com.jason.jasonutils.applockmanager.AppLockManagerActivity" />
+        
+        
+        <!-- 其他APP要访问打开该Activity，必须添加这个权限 -->
+        <activity 
+            android:name="com.jason.jasonutils.cleanappcache.CleanAppCacheActivity" >
+            <intent-filter >
+                <action android:name="com.jason.jasonutils.key"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+           </activity>
+
+        <!-- TabHost Demo -->
+        <activity android:name="com.jason.jasonutils.tabhost.TabHostDemo" />
+        <activity android:name="com.jason.jasonutils.tabhost.ActivityOne" />
+        <activity android:name="com.jason.jasonutils.tabhost.ActivityTwo" />
+        <activity android:name="com.jason.jasonutils.tabhost.ActivityThree" />
+        <activity android:name="com.jason.jasonutils.tabhost.ActivityFour" />
+        
+        <!-- Fragment Demo -->
+        <activity android:name="com.jason.jasonutils.fragment.FragmentDmeoList" />
+        <activity android:name="com.jason.jasonutils.fragment.FragmentActivityDemo" />
+        <activity android:name="com.jason.jasonutils.fragment.fragmentlife.FragmentLifeDemoActivity" />
+        <activity android:name="com.jason.jasonutils.fragment.splitshow.FragmentSplitShowActivity" />
+        
+        <activity
+            android:name="com.jason.jasonutils.sortsequence.SortListActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.jason.jasonutils.webview.WebViewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.jason.jasonutils.outgoingcallselecte.OutGoingCallActivity"
+            android:permission="android.permission.CALL_PRIVILEGED"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.CALL_PRIVILEGED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="tel" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.jason.jasonutils.searchable.MySearchDemoActivity"
+            android:launchMode="singleTop" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" >
+            </meta-data>
+>
+        </activity>
+        <activity
+            android:name="com.jason.jasonutils.applockmanager.AppLockAuthActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance" >
+        </activity>
+        
+        <activity android:name="com.jason.jasonutils.litehttpdemo.LiteHttpDemo"/>
+        <activity android:name="com.jason.jasonutils.view.listview.MultipleItemsList"/>
+        
+        <activity android:name="com.jason.jasonutils.zip.ZipDemoActivity"/>
+        <activity android:name="com.jason.jasonutils.pictureoperate.TakePicForPhotoActivity"/>
+        <activity android:name="com.jason.jasonutils.smile.SimleDemo"/>
+        <activity android:name="com.jason.jasonutils.creditcard.CreditCardActivity"/>
+        <activity android:name="com.jason.jasonutils.listviewlimited.ListViewLimited"/>
+        <activity android:name="com.jason.jasonutils.refresh.PulldownRefreshDemo"/>
+
+        <receiver android:name="com.jason.jasonutils.componentdemo.RebootReceiver" >
+            <intent-filter android:priority="5000" >
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="start_reboot_broadcast" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.jason.jasonutils.componentdemo.RebootService" />
+        <service android:name="com.jason.jasonutils.service.MyService" />
+        <service android:name="com.jason.jasonutils.toast.MyFloatToastService" />
+        <service android:name="com.jason.jasonutils.sms.CallRecordsAndSmsRecordsChangeedService" />
+        <service android:name="com.jason.jasonutils.comingcalladdress.PhoneNumAddressService" />
+        <service android:name="com.jason.jasonutils.blacknumber.BlackNumberService" />
+        <service android:name="com.jason.jasonutils.widget.MyWidgetService" />
+        <service android:name="com.jason.jasonutils.applockmanager.AppLockService" />
+        
+        <!-- 一网通支付 -->
+        <activity android:name="com.jason.jasonutils.cmbpay.MyCMBPayActivity"/>
+        <service android:name="cmb.pb.cmbsafe.CmbService" android:exported="false">         
+        </service>        
+        <activity
+            android:name="cmb.pb.ui.PBKeyboardActivity"
+            android:theme="@style/CmbDialogStyleBottom" >
+        </activity>
+
+        <provider
+            android:name="com.jason.jasonutils.handler.AsyncQueryHanlderContentProvider"
+            android:authorities="com.jason.myprovider" >
+        </provider>
+        <provider
+            android:name="com.jason.jasonutils.provider.WorkerProvider"
+            android:authorities="com.jason.jasonutils.workerprovider" >
+        </provider>
+
+        <receiver android:name="com.jason.jasonutils.adapterdemo.CreateDBdataReceiver" >
+            <intent-filter>
+                <action android:name="jason_utils_create_database_info" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.jason.jasonutils.phone.OutCallReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.jason.jasonutils.sms.msgreceiver.SmsReceiver" >
+            <intent-filter android:priority="1000" >
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.jason.jasonutils.receiverdemo.FinalRecevier" >
+            <intent-filter android:priority="10" >
+                <action android:name="com.jason.broadcast.demo" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.jason.jasonutils.receiverdemo.MyBroadcastReceiver" >
+            <intent-filter android:priority="100" >
+                <action android:name="com.jason.broadcast.demo" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.jason.jasonutils.receiverdemo.MyBroadcastReceiver2" >
+            <intent-filter android:priority="150" >
+                <action android:name="com.jason.broadcast.demo" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.jason.jasonutils.receiverdemo.MyBroadcastReceiver3" >
+            <intent-filter android:priority="1000" >
+                <action android:name="com.jason.broadcast.demo" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 窗口小部件 -->
+        <receiver android:name="com.jason.jasonutils.widget.MyWidget" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/my_appwidget_info" >
+            </meta-data>
+        </receiver>
+
+        <!-- 杀死进程广播接收者 -->
+        <receiver android:name="com.jason.jasonutils.widget.AutoKillProcessReceiver" >
+            <intent-filter>
+                <action android:name="com.jason.jasonutils.autokill" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_networkDemo_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/bt_check_network"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="检测网络" />
+
+    <Button
+        android:id="@+id/bt_check_gps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="检测GPS" />
+
+    <Button
+        android:id="@+id/bt_check_wifi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="检测wifi" />
+
+    <Button
+        android:id="@+id/bt_check_mobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="检测mobile" />
+
+    <Button
+        android:id="@+id/bt_check_apn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="检测手机APN" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_show_apn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center" >
+
+    <ImageView
+        android:id="@+id/iv_searchable_item_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/contact_photo" />
+
+    <LinearLayout
+        android:id="@+id/ll__searchable_item_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iv_searchable_item_photo"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_searchable_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hahah"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tv_searchable_item_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="faodifaiowefaslkd"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_searchable_item_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:text="2014.02.13"
+        android:textSize="10sp" />
+
+</RelativeLayout>

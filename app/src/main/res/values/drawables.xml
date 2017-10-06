@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="listview_item4">#ffecc5</item>
+    <item type="drawable" name="save_cance_on">#0f2e41</item>
+    <item type="drawable" name="save_cance_normal">#14354a</item>
+</resources>

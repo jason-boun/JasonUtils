@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_dialogdemo_container"
+    android:layout_margin="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <Button 
+        android:id="@+id/bt_Button_simpleList_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="列表对话框"/>
+    <Button 
+        android:id="@+id/bt_Button_singlechoice_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="单选对话框"/>
+    <Button 
+        android:id="@+id/bt_Button_multichoice_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="复选对话框"/>
+    <Button 
+        android:id="@+id/bt_Button_threebutton_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="三个按钮对话框"/>
+    <Button 
+        android:id="@+id/bt_customview_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="对话框挂载自定义视图"/>
+    <Button 
+        android:id="@+id/bt_progress_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="进度条对话框"/>
+    <Button 
+        android:id="@+id/bt_activity_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Activity对话框"/>
+
+</LinearLayout>

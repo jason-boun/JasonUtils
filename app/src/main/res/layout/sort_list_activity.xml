@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_edit_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/et_input_name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:hint="请输入名字" />
+
+            <EditText
+                android:id="@+id/et_input_number"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:hint="请输入号码" />
+        </LinearLayout>
+
+        <Button
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:id="@+id/bt_enter_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="添加" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_sort_list_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_edit_layout"
+        android:background="#cfc"
+        android:gravity="center"
+        android:text="通讯录列表"
+        android:textSize="20sp" />
+
+    <ListView
+        android:id="@+id/lv_show_name_list"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#0099FF"
+        android:layout_below="@id/tv_sort_list_title" >
+    </ListView>
+
+    <com.jason.jasonutils.sortsequence.ZmBar
+        android:id="@+id/sort_list_fast_scroller"
+        android:layout_width="22dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_sort_list_title"
+        android:layout_gravity="top|right|center"
+        android:layout_marginTop="0dip"
+        android:background="#ccc"
+        android:scaleType="centerInside"
+        android:src="@drawable/dic_background"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/sort_list_fast_position"
+        android:layout_width="70dip"
+        android:layout_height="70dip"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_margin="34dip"
+        android:background="@drawable/sort_icon_bg_click"
+        android:gravity="center"
+        android:padding="5.0dip"
+        android:textColor="@color/white"
+        android:textSize="42sp"
+        android:visibility="invisible" />
+
+</RelativeLayout>

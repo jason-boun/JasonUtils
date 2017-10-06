@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFF4"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dip" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="请设置密码锁"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+            android:typeface="serif" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:orientation="vertical"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp" >
+
+            <ImageView
+                android:layout_width="20dip"
+                android:layout_height="20dip"
+                android:layout_gravity="bottom"
+                android:contentDescription="xx"
+                android:src="@drawable/lock_icon" />
+
+            <EditText
+                android:id="@+id/et_setlockpwd_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dip"
+                android:background="@null"
+                android:gravity="bottom"
+                android:hint="请输入6位数字密码"
+                android:inputType="numberPassword"
+                android:maxLength="6"
+                android:password="true"
+                android:singleLine="true"
+                android:textCursorDrawable="@null" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCC" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp" >
+
+            <ImageView
+                android:layout_width="20dip"
+                android:layout_height="20dip"
+                android:layout_gravity="bottom"
+                android:contentDescription="xx"
+                android:src="@drawable/lock_icon" />
+
+            <EditText
+                android:id="@+id/et_setlockpwd_re_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dip"
+                android:background="@null"
+                android:digits="0123456789"
+                android:gravity="bottom"
+                android:hint="确认密码"
+                android:inputType="numberPassword"
+                android:maxLength="6"
+                android:password="true"
+                android:singleLine="true"
+                android:textCursorDrawable="@null" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCC" />
+
+        <Button
+            android:id="@+id/bt_setlockpwd_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/button_login_bg"
+            android:gravity="center"
+            android:onClick="confirm"
+            android:paddingBottom="7dp"
+            android:paddingTop="7dp"
+            android:text="确定"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="10dip"
+            android:background="@null"
+            android:gravity="right"
+            android:padding="10dp"
+            android:text="跳过此步"
+            android:textColor="#000"
+            android:onClick="skipSetPwd"
+            android:visibility="visible" />
+    </LinearLayout>
+
+</LinearLayout>

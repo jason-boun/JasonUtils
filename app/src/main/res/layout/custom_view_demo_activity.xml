@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:jason="http://schemas.android.com/apk/res/com.jason.jasonutils"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+    
+    <com.jason.jasonutils.customview.MyCustomSettingView 
+        android:id="@+id/mysettingview_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        jason:title = "标题"
+        jason:content_on ="已经打开设置" 
+        jason:content_off ="已经关闭设置" >
+    </com.jason.jasonutils.customview.MyCustomSettingView>
+    
+    <com.jason.jasonutils.customview.MyTextView 
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:text="哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈"
+        />
+
+</LinearLayout>

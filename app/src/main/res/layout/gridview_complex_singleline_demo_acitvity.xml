@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg" >
+
+    <ListView
+        android:id="@+id/lv_contact_list_show"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/contact_bottom_layout"
+        android:background="@drawable/main_bg"
+        android:cacheColorHint="#00000000"
+        android:divider="@drawable/bg_line_h"
+        android:dividerHeight="1dip"
+        android:scrollbars="vertical" />
+
+    <RelativeLayout
+        android:id="@+id/contact_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/show_groupchat_select_person_bg_pic"
+        android:gravity="center" >
+
+        <HorizontalScrollView
+            android:id="@+id/hsv_gridview_scrollview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/bt_select_confirm"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal" >
+
+                <GridView
+                    android:id="@+id/gv_contact_selected_show"
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:columnWidth="50dp"
+                    android:gravity="center"
+                    android:horizontalSpacing="5dp"
+                    android:verticalSpacing="0dp" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <Button
+            android:id="@+id/bt_select_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/btn_groupchat_person_confirm_bg"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="确定" />
+    </RelativeLayout>
+
+</RelativeLayout>

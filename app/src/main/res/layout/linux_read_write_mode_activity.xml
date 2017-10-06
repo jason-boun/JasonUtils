@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/rg_select_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/rb_private"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="私有的文件" />
+
+        <RadioButton
+            android:id="@+id/rb_readable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全局可读的文件" />
+
+        <RadioButton
+            android:id="@+id/rb_writeable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全局可写的文件" />
+
+        <RadioButton
+            android:id="@+id/rb_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全局可读可写的文件" />
+
+        <RadioButton
+            android:id="@+id/rb_append"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="追加模式访问文件" />
+
+        <RadioButton
+            android:id="@+id/rb_sd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SD卡上的文件" />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="generateFile"
+        android:text="生成文件" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="writeappend"
+        android:text="追加模式写入新数据" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="writecache"
+        android:text="向缓存目录写文件" />
+
+</LinearLayout>

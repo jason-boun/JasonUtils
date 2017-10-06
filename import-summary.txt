@@ -1,0 +1,104 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* .DS_Store
+* .idea/
+* .idea/.name
+* .idea/compiler.xml
+* .idea/copyright/
+* .idea/copyright/profiles_settings.xml
+* .idea/encodings.xml
+* .idea/gradle.xml
+* .idea/misc.xml
+* .idea/modules.xml
+* .idea/scopes/
+* .idea/scopes/scope_settings.xml
+* .idea/vcs.xml
+* .idea/workspace.xml
+* proguard-android.txt
+* proguard-project.txt
+* readme/
+* readme/Android乱码问题.txt
+* readme/Eclipse中10个最有用的快捷键组合.doc
+* readme/Enhance-Review-Note.txt
+* readme/JUnit测试.txt
+* readme/SQL指令小结.txt
+* readme/SVN相关操作.txt
+* readme/adb常用指令.txt
+* readme/baidumapapi.jar
+* readme/base-review-note
+* readme/eclipse小技巧.txt
+* readme/sqlite3和monkey测试.txt
+* readme/study_log.txt
+* readme/tcpdump对apk抓包.txt
+* readme/windows小技巧.txt
+* readme/反编译.txt
+* readme/命令行签名优化.txt
+* readme/工程目录结构.txt
+* readme/自定义控件.txt
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => app/src/main/AndroidManifest.xml
+* assets/ => app/src/main/assets/
+* libs/android-support-v4.jar => app/libs/android-support-v4.jar
+* libs/armeabi/libBMapApiEngine_v1_3_4.so => app/src/main/jniLibs/armeabi/libBMapApiEngine_v1_3_4.so
+* libs/armeabi/libiconv.so => app/src/main/jniLibs/armeabi/libiconv.so
+* libs/armeabi/libzbarjni.so => app/src/main/jniLibs/armeabi/libzbarjni.so
+* libs/baidumapapi.jar => app/libs/baidumapapi.jar
+* libs/cmbkeyboard.jar => app/libs/cmbkeyboard.jar
+* libs/commons-beanutils.jar => app/libs/commons-beanutils.jar
+* libs/commons-codec.jar => app/libs/commons-codec.jar
+* libs/commons-httpclient-3.1.jar => app/libs/commons-httpclient-3.1.jar
+* libs/commons-lang3-3.0-beta.jar => app/libs/commons-lang3-3.0-beta.jar
+* libs/commons-logging-1.1.jar => app/libs/commons-logging-1.1.jar
+* libs/core.jar => app/libs/core.jar
+* libs/fastjson-1.2.5.jar => app/libs/fastjson-1.2.5.jar
+* libs/gson-2.3.jar => app/libs/gson-2.3.jar
+* libs/lite-http-2.1.2.jar => app/libs/lite-http-2.1.2.jar
+* libs/org.json.jar => app/libs/org.json.jar
+* libs/pinyin4j-2.5.0.jar => app/libs/pinyin4j-2.5.0.jar
+* libs/zbar.jar => app/libs/zbar.jar
+* lint.xml => app/lint.xml
+* res/ => app/src/main/res/
+* src/ => app/src/main/java/
+* src/android/content/pm/IPackageDataObserver.aidl => app/src/main/aidl/android/content/pm/IPackageDataObserver.aidl
+* src/android/content/pm/IPackageStatsObserver.aidl => app/src/main/aidl/android/content/pm/IPackageStatsObserver.aidl
+* src/android/content/pm/PackageStats.aidl => app/src/main/aidl/android/content/pm/PackageStats.aidl
+* src/android/telephony/NeighboringCellInfo.aidl => app/src/main/aidl/android/telephony/NeighboringCellInfo.aidl
+* src/axisoffset.dat => app/src/main/resources/axisoffset.dat
+* src/com/android/internal/telephony/ITelephony.aidl => app/src/main/aidl/com/android/internal/telephony/ITelephony.aidl
+* src/com/jason/jasonsubutils/complexservice/IMyService.aidl => app/src/main/aidl/com/jason/jasonsubutils/complexservice/IMyService.aidl
+* src/com/jason/jasonsubutils/complexservice/Product.aidl => app/src/main/aidl/com/jason/jasonsubutils/complexservice/Product.aidl
+* src/com/jason/jasonutils/authority/UseFacebookAccountLogin.txt => app/src/main/resources/com/jason/jasonutils/authority/UseFacebookAccountLogin.txt
+* src/com/jason/jasonutils/enhance/aopframework/config.properties => app/src/main/resources/com/jason/jasonutils/enhance/aopframework/config.properties
+* src/com/jason/jasonutils/enhance/reflect/config.properties => app/src/main/resources/com/jason/jasonutils/enhance/reflect/config.properties
+* src/com/jason/jasonutils/pattern/combining/observer/.QuackDecorator.java.swp => app/src/main/resources/com/jason/jasonutils/pattern/combining/observer/.QuackDecorator.java.swp
+* src/com/jason/jasonutils/pattern/command/undo/CeilingFanOnCommand.bak => app/src/main/resources/com/jason/jasonutils/pattern/command/undo/CeilingFanOnCommand.bak
+* src/com/jason/jasonutils/pattern/factory/pizzas/.DS_Store => app/src/main/resources/com/jason/jasonutils/pattern/factory/pizzas/.DS_Store
+* src/com/jason/jasonutils/pattern/templatemethod/applet/AppletSource.txt => app/src/main/resources/com/jason/jasonutils/pattern/templatemethod/applet/AppletSource.txt
+* src/com/jason/jasonutils/xmlparser/weather.xml => app/src/main/resources/com/jason/jasonutils/xmlparser/weather.xml
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

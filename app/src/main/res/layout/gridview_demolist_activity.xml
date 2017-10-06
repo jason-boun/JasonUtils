@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="20dp"
+    android:gravity="left"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/bt_gridview_demolist_click_simpledemo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="GridView简单点击Demo" />
+
+    <Button
+        android:id="@+id/bt_gridview_demolist_singleline_simpledemo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="单行显示gridview简单Demo" />
+
+    <Button
+        android:id="@+id/bt_gridview_demolist_clickdemo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="gridview复杂点击事件传递Demo" />
+
+    <Button
+        android:id="@+id/bt_gridview_demolist_singlelinedemo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="gridview单行显示复杂事件传递Demo" />
+    <Button
+        android:id="@+id/bt_expandableListView_demo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="ExpandableListView Demo" />
+
+</LinearLayout>

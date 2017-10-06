@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:gravity="right|center_vertical"
+        android:padding="3.0dip" >
+
+        <ImageView
+            android:id="@+id/iv_person_info_photo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5.0dip"
+            android:padding="3.0dip"
+            android:src="@drawable/user_bg" />
+
+        <TextView
+            android:id="@+id/tv_person_info_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/iv_person_info_photo"
+            android:ellipsize="end"
+            android:ems="7"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textSize="15.0sp" />
+
+        <TextView
+            android:id="@+id/tv_person_info_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_person_info_name"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/iv_person_info_photo"
+            android:ellipsize="end"
+            android:paddingLeft="1dp"
+            android:singleLine="true"
+            android:textColor="@color/lightgrey"
+            android:textSize="14.0sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_person_checked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/ic_checkbox_unchecked" />
+
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:jason="http://schemas.android.com/apk/res/com.jason.jasonutils"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+    
+    <com.jason.jasonutils.customview.MyCustomSettingView 
+        android:id="@+id/cv_applock_manager_checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        jason:title = "密码锁管理"
+        jason:content_on ="已经打开密码锁" 
+        jason:content_off ="已经关闭密码锁" >
+    </com.jason.jasonutils.customview.MyCustomSettingView>
+
+</LinearLayout>

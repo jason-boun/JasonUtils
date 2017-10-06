@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_timer_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="15dp"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/bt_chronometer_demo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="chronometer控件演示" />
+
+    <Button
+        android:id="@+id/bt_timer_task_demo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="timer计时器demo" />
+
+    <Button
+        android:id="@+id/bt_alarm_manager_demo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AlarmManger_demo" />
+
+    <Button
+        android:id="@+id/bt_handler_demo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Handler_demo" />
+
+    <Button
+        android:id="@+id/bt_asynctask_demo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AsyncTask_demo" />
+
+</LinearLayout>

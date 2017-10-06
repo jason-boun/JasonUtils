@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".JasonUtilsMainActivity" >
+
+    <Button
+        android:id="@+id/bt_show_bottom_popupwindown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点击弹出popupwindown" />
+
+    <Button
+        android:id="@+id/bt_show_acitivity_window"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="点击弹出Activity式window" />
+    <Button
+        android:id="@+id/bt_show_mount_popupwindown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="点击弹出View挂载式window" />
+
+</LinearLayout>

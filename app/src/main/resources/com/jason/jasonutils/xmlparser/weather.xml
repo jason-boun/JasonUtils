@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<weather>
+	<day id="1">
+		<wendu>18</wendu>
+		<wind>5</wind>
+		<type>晴</type>
+	</day>
+	<day id="2">
+		<wendu>16</wendu>
+		<wind>3</wind>
+		<type>雨</type>
+	</day>
+</weather>

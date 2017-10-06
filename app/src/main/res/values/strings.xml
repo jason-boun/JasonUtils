@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">JasonUtils</string>
+    <string name="menu_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="content_description">contentDescription</string>
+    <string name="searchLabel">searching</string>
+    <string name="searchHint">输入关键字进行搜索</string>
+    <string name="del">删除</string>
+    <string name="fix_data">我要显示的数据，第一个：%1$8s，第二个：%2$8s，第三个：%3$8d，第四个：%4$20.2f</string>
+<!-- 属性值举例说明
+%n$ms：代表输出的是字符串，n代表是第几个参数，设置m的值可以在输出之前放置空格 
+%n$md：代表输出的是整数，n代表是第几个参数，设置m的值可以在输出之前放置空格，也可以设为0m,在输出之前放置m个0 
+%n$mf：代表输出的是浮点数，n代表是第几个参数，设置m的值可以控制小数位数，如m=2.2时，输出格式为00.00  -->
+    
+        <!-- 国家码 -->
+    <string name="Cambodia">柬埔寨-855</string>
+    <string name="China">中国-86</string>
+    <string name="United_States">美国-1</string>
+    <string name="Afghanistan">阿富汗-93</string>
+    <string name="Albania">阿尔巴尼亚-355</string>
+    <string name="Algeria">阿尔及利亚-213</string>
+    <string name="Andorra">安道尔-376</string>
+    <string name="Angola">安哥拉-244</string>
+    <string name="Argentina">阿根廷-54</string>
+    <string name="Armenia">亚美尼亚-374</string>
+    <string name="Aruba">阿鲁巴岛-297</string>
+    <string name="Ascension_Island">阿森松岛-247</string>
+    <string name="Australia">澳大利亚-61</string>
+    <string name="Austria">奥地利-43</string>
+    <string name="Azerbaijan">阿塞拜疆-994</string>
+    <string name="Bahamas">巴哈马群岛-1242</string>
+    <string name="Bahrain">巴林-973</string>
+    <string name="Bangladesh">孟加拉国-880</string>
+    <string name="Belarus">白俄罗斯-375</string>
+    <string name="Belgium">比利时-32</string>
+    <string name="Belize">伯利兹-501</string>
+    <string name="Benin">贝宁-229</string>
+    <string name="Bhutan">不丹-975</string>
+    <string name="Bolivia">玻利维亚-591</string>
+    <string name="Bosnia_Herzegovina">波斯尼亚-黑塞哥维那-387</string>
+    <string name="Botswana">博茨瓦纳-267</string>
+    <string name="Brazil">巴西-55</string>
+    <string name="Brunei">文莱-673</string>
+    <string name="Bulgaria">保加利亚-359</string>
+    <string name="Burkina_Faso">布基纳法索-226</string>
+    <string name="Burundi">布隆迪-257</string>
+    <string name="Burundi_Onatel">布隆迪onatel-257</string>
+    <string name="Burundi_Other">布隆迪的其他-257</string>
+    <string name="Cameroon">喀麦隆-237</string>
+    <string name="Canada">加拿大-1</string>
+    <string name="Cape_Verde">佛得角-238</string>
+    <string name="Cayman_Islands">开曼群岛-1345</string>
+    <string name="Central_African_Republic">中非共和国-236</string>
+    <string name="Chad">乍得-235</string>
+    <string name="Chile">智利-56</string>
+    <string name="Colombia">哥伦比亚-57</string>
+    <string name="Comoros">科摩罗-269</string>
+    <string name="Congo">刚果-242</string>
+    <string name="Cook_Islands">库克群岛-682</string>
+    <string name="Costa_Rica">哥斯达黎加-506</string>
+    <string name="Croatia">克罗地亚-385</string>
+    <string name="Cuba">古巴-53</string>
+    <string name="Cyprus">塞浦路斯-357</string>
+    <string name="Czech_Republic">捷克共和国-420</string>
+    <string name="Dem_Rep_of_Congo">刚果共和国-243</string>
+    <string name="Denmark">丹麦-45</string>
+    <string name="Diego_Garcia">迭戈加西亚-246</string>
+    <string name="Djibouti">吉布提-253</string>
+    <string name="Dominica">多米尼加-1890</string>
+    <string name="East_Timor">东帝汶-670</string>
+    <string name="Ecuador">厄瓜多尔-593</string>
+    <string name="Egypt">埃及-20</string>
+    <string name="El_Salvador">萨尔瓦多-503</string>
+    <string name="Equatorial_Guinea">赤道几内亚-240</string>
+    <string name="Eritrea">厄立特里亚-291</string>
+    <string name="Estonia">爱沙尼亚-372</string>
+    <string name="Ethiopia">埃塞俄比亚-251</string>
+    <string name="Falkland_Islands">福克兰群岛-500</string>
+    <string name="Faroe_Islands">法罗群岛-298</string>
+    <string name="Fiji">斐济-679</string>
+    <string name="Finland">芬兰-358</string>
+    <string name="France">法国-33</string>
+    <string name="French_Guiana">法属圭亚那-594</string>
+    <string name="French_Polynesia">法属波利尼西亚-689</string>
+    <string name="Gabon">加蓬-241</string>
+    <string name="Gambia">冈比亚-220</string>
+    <string name="Georgia">格鲁吉亚-995</string>
+    <string name="Germany">德国-49</string>
+    <string name="Ghana">加纳-233</string>
+    <string name="Gibraltar">直布罗陀-350</string>
+    <string name="Greece">希腊-30</string>
+    <string name="Greenland">格陵兰岛-299</string>
+    <string name="Guadeloupe">瓜德罗普岛-590</string>
+    <string name="Guatemala">瓜地马拉-502</string>
+    <string name="Guinea">几内亚-224</string>
+    <string name="GuineaBissau">几内亚比索-245</string>
+    <string name="Guyana">圭亚那-592</string>
+    <string name="Haiti">海地-509</string>
+    <string name="Honduras">洪都拉斯-504</string>
+    <string name="Hong_Kong">香港-852</string>
+    <string name="Hungary">匈牙利-36</string>
+    <string name="Iceland">冰岛-354</string>
+    <string name="India">印度-91</string>
+    <string name="Indonesia">印度尼西亚-62</string>
+    <string name="Iran">伊朗-98</string>
+    <string name="Iraq">伊拉克-964</string>
+    <string name="Ireland">爱尔兰-353</string>
+    <string name="Israel">以色列-972</string>
+    <string name="Italy">意大利-39</string>
+    <string name="Ivory_Coast">象牙海岸-225</string>
+    <string name="Jamaica">牙买加-1876</string>
+    <string name="Japan">日本-81</string>
+    <string name="Jordan">约旦-962</string>
+    <string name="Kazakhstan">哈萨克斯坦-77</string>
+    <string name="Kenya">肯尼亚-254</string>
+    <string name="Kiribati">基里巴斯-686</string>
+    <string name="Kuwait">科威特-965</string>
+    <string name="Kyrgyzstan">吉尔吉斯斯坦-996</string>
+    <string name="Laos">老挝-856</string>
+    <string name="Latvia">拉脱维亚-371</string>
+    <string name="Lebanon">黎巴嫩-961</string>
+    <string name="Lesotho">莱索托-266</string>
+    <string name="Liberia">利比里亚-231</string>
+    <string name="Libya">利比亚-218</string>
+    <string name="Liechtenstein">列支敦士登-423</string>
+    <string name="Lithuania">立陶宛-370</string>
+    <string name="Luxembourg">卢森堡-352</string>
+    <string name="Macau">澳门-853</string>
+    <string name="Macedonia">马其顿-389</string>
+    <string name="Madagascar">马达加斯加-261</string>
+    <string name="Malawi">马拉维-265</string>
+    <string name="Malaysia">马来西亚-60</string>
+    <string name="Maldives">马尔代夫-960</string>
+    <string name="Mali">马里-232</string>
+    <string name="Malta">马其他-356</string>
+    <string name="Mariana_Islands">马里亚纳群岛-1870</string>
+    <string name="Marshall_Islands">马绍尔群岛-692</string>
+    <string name="Martinique">马提尼克岛-596</string>
+    <string name="Mauritania">毛里塔尼亚-222</string>
+    <string name="Mauritius_Island">毛里求斯岛-230</string>
+    <string name="Mayotte">马约特岛-262</string>
+    <string name="Mexico">墨西哥-52</string>
+    <string name="Micronesia">密克罗尼西亚-691</string>
+    <string name="Moldova">摩尔多瓦-373</string>
+    <string name="Monaco">摩纳哥-377</string>
+    <string name="Mongolia">内蒙-976</string>
+    <string name="Montenegro">黑山共和国-382</string>
+    <string name="Morocco">摩洛哥-212</string>
+    <string name="Mozambique">莫桑比克-258</string>
+    <string name="Myanmar">缅甸-95</string>
+    <string name="Namibia">纳米比亚-264</string>
+    <string name="Nauru">瑙鲁-674</string>
+    <string name="Nepal">尼泊尔-977</string>
+    <string name="Netherlands">荷兰-31</string>
+    <string name="Netherlands_Antilles">荷属安的列斯群岛-599</string>
+    <string name="New_Caledonia">新喀里多尼亚-687</string>
+    <string name="New_Zealand">新西兰-64</string>
+    <string name="Nicaragua">尼加拉瓜-505</string>
+    <string name="Niger">尼日尔-227</string>
+    <string name="Nigeria">尼日利亚-234</string>
+    <string name="Niue_Island">纽埃岛-683</string>
+    <string name="North_Korea">朝鲜-850</string>
+    <string name="Norway">挪威-47</string>
+    <string name="Oman">阿曼-968</string>
+    <string name="Pakistan">巴基斯坦-92</string>
+    <string name="Palau">帕劳群岛-680</string>
+    <string name="Palestine">巴勒斯坦-970</string>
+    <string name="Panama">巴拿马-507</string>
+    <string name="Papua_New_Guinea">巴布亚新几内亚-675</string>
+    <string name="Paraguay">巴拉圭-595</string>
+    <string name="Peru">秘鲁-51</string>
+    <string name="Philippines">菲律宾-63</string>
+    <string name="Poland">波兰-48</string>
+    <string name="Portugal">葡萄牙-351</string>
+    <string name="Qatar">卡塔尔-974</string>
+    <string name="Reunion_Island">留尼旺岛-262</string>
+    <string name="Romania">罗马尼亚-40</string>
+    <string name="Russia">俄罗斯-7</string>
+    <string name="Rwanda">卢旺达-250</string>
+    <string name="San_Marino">圣马力诺-378</string>
+    <string name="Sao_Tome_Principe">圣多美和普林西比-239</string>
+    <string name="Saudi_Arabia">沙特阿拉伯-966</string>
+    <string name="Senegal">塞内加尔-221</string>
+    <string name="Serbia">塞尔维亚-381</string>
+    <string name="Seychelles">塞舌尔-248</string>
+    <string name="Sierra_Leone">塞拉利昂-232</string>
+    <string name="Singapore">新加坡-65</string>
+    <string name="Slovakia">斯洛伐克-421</string>
+    <string name="Slovenia">斯洛文尼亚-386</string>
+    <string name="Solomon_Islands">所罗门群岛-677</string>
+    <string name="Somalia">索马里-252</string>
+    <string name="South_Africa">南非-27</string>
+    <string name="South_Korea">韩国-82</string>
+    <string name="Spain">西班牙-34</string>
+    <string name="Sri_Lanka">斯里兰卡-94</string>
+    <string name="St_Helena">圣赫勒拿岛-290</string>
+    <string name="St_Pierre_Miquelon">圣石和密克隆岛-508</string>
+    <string name="Sudan">苏丹-249</string>
+    <string name="Suriname">苏里南-597</string>
+    <string name="Swaziland">斯威士兰-268</string>
+    <string name="Sweden">瑞典-46</string>
+    <string name="Switzerland">瑞士-41</string>
+    <string name="Syria">叙利亚-963</string>
+    <string name="Tadjikistan">塔吉克斯坦-992</string>
+    <string name="Taiwan">台湾-886</string>
+    <string name="Tanzania">坦桑尼亚-255</string>
+    <string name="Thailand">泰国-66</string>
+    <string name="Togo">多哥-228</string>
+    <string name="Tokelau">托克劳群岛-690</string>
+    <string name="Tonga">汤加-676</string>
+    <string name="Trinidad">特立尼达多巴哥-1809</string>
+    <string name="Tunisia">突尼斯-216</string>
+    <string name="Turkey_Cyprus_North">北塞浦路斯土耳其-90</string>
+    <string name="Turkmenistan">土库曼斯坦-993</string>
+    <string name="Tuvalu">图瓦卢-688</string>
+    <string name="Uganda">乌干达-256</string>
+    <string name="Ukraine">乌克兰-380</string>
+    <string name="United_Arab_Emirates">阿拉伯联合酋长国-971</string>
+    <string name="United_Kingdom">大不列颠-44</string>
+    <string name="Uruguay">乌拉圭-598</string>
+    <string name="Uzbekistan">乌兹别克斯坦-998</string>
+    <string name="Vanuatu">瓦努阿图-678</string>
+    <string name="Venezuela">委内瑞拉-58</string>
+    <string name="Vietnam">越南-84</string>
+    <string name="Wallis">沃利斯和富图纳群岛-681</string>
+    <string name="Western_Samoa">萨摩亚西部-685</string>
+    <string name="Yemen">也门共和国-967</string>
+    <string name="Zambia">赞比亚-260</string>
+    <string name="Zimbabwe">津巴布韦-263</string>
+    
+    <!-- liteHttp框架资源 -->
+    
+    <string name="title">LiteLib : lite-http 2.0</string>
+    <string name="sub_title">see more via code and log.</string>
+    <!--
+    LiteHttp   1.0 Features
+    * 1. 单线程：基于当前线程高效率运作。
+    * 2. 轻量级：微小的内存开销与Jar包体积，仅约 86K 。
+    * 3. 全支持：GET, POST, PUT, DELETE, HEAD, TRACE, OPTIONS, PATCH.
+    * 4. 全自动：一行代码将请求Java Model 转化为 Http Parameter，结果Json String 转化为 Java Model 。
+    * 5. 易拓展：自定义 DataParser，将网络数据流自由转化为你想要的任意数据类型。
+    * 6. 基于接口：架构灵活，轻松替换网络连接方式的核心实现方式，以及 Json 序列化库。
+    * 7. 文件上传：支持单个、多个大文件上传。
+    * 8. 文件下载：支持文件、Bimtap下载及其进度通知。
+    * 9. 网络禁用：快速禁用一种、多种网络环境，比如禁用 2G，3G 。
+    * 10. 数据统计：链接、读取时长统计，以及流量统计。
+    * 11. 异常体系：统一的异常处理体系，简明清晰地抛出可再细分的三大类异常：客户端、网络、服务器异常。
+    * 12. GZIP压缩：Request, Response 自动 GZIP 压缩节省流量。
+    * 13. 自动重试：结合探测异常类型和当前网络状况，智能执行重试策略。
+    * 14. 自动重定向：基于 30X 状态的重试，且可设置最大次数防止过度跳转。
+    * 15. 自带简单异步执行器，方便开发者实现异步请求方案。
+
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    LiteHttp   2.0 Features
+    * 1. 可配置：更多更灵活的配置选择项，多达 23+ 项。
+    * 2. 多态化：更加直观的API，输入和输出更加明确。
+    * 3. 强并发：智能高效的并发调度，有效控制核心并发与队列控制策略。
+    * 4. 注解化：信息配置约定更多样，如果你喜欢，可以注解 API、Method、ID、TAG、CacheMode 等参数。
+    * 5. 多层缓存：内存命中更高效！支持多样的缓存模式，支持设置缓存有效期。
+    * 6. 完善回调：自由设置回调当前或UI线程，自由开启上传、下载进度通知。
+    * 7. 完善构建：提供 jar 包支持，后边支持 gradle 和 maven 。
+    -->
+
+    <string-array name="http_test_list">
+        <item>0. 快速配置（可忽略）</item>
+        <item>1. 发起异步请求</item>
+        <item>2. 发起同步请求</item>
+        <item>3. 同步请求简化</item>
+        <item>4. 非安全请求</item>
+        <item>5. HTTPS请求</item>
+        <item>6. 全自动模型转换</item>
+        <item>7. 自定义数据解析</item>
+        <item>8. 替换Json序列化库</item>
+        <item>9. 文件上传</item>
+        <item>10. 文件、位图下载</item>
+        <item>11. 禁用网络</item>
+        <item>12. 流量、时长统计</item>
+        <item>13. 重试和重定向</item>
+        <item>14. 最佳实践：异常处理</item>
+        <item>15. 最佳实践：取消请求</item>
+
+        <item>16. POST多形态数据</item>
+        <item>17. 并发与调度策略</item>
+        <item>18. 参数配置详解</item>
+        <item>19. 使用注解</item>
+        <item>20. 双层缓存机制</item>
+        <item>21. 回调机制详解</item>
+        <item>22. 最佳实践：使用SmartExecutor</item>
+        <item>23. 最佳实践：全自动转换复杂对象</item>
+        <item>24. 最佳实践：使用富 HTTP 参数</item>
+    </string-array>
+
+    <string-array name="http_test_post">
+
+        <item>1. 字符串上传</item>
+        <item>2. UrlEncodedForm上传</item>
+        <item>3. 对象自动转JSON上传</item>
+        <item>4. 对象序列化后上传</item>
+        <item>5. 字节上传</item>
+        <item>6. 单文件上传</item>
+        <item>7. 单输入流上传</item>
+        <item>8. 多文件（表单）上传</item>
+    </string-array>
+    
+    <!-- 一网通支付 -->
+    <string name="cmbkb_caption">CMB Safe Input</string>
+    <string name="cmbkb_finish">Finish</string>
+    <string name="cmbkb_more">More</string>
+    <string name="cmbkb_please_input">Please Input</string>
+    <string name="cmbkb_safe_input">Safe Input</string>
+    <string name="cmbkb_back">Back</string>
+    <string name="cmbkb_publickey">GOBtoTuY+jKU+v0swC7WHLG8bVzupJ4PbiyvQ3116JbiCRMi2xGwgxfEJeJ11uGUDByN0I96LGE2k7XP7sNqp8rThKUMnGo+eDP6neHrH+rufT+S0RfvXSkYTl9xCwPmmhd2wbbq1CDyuWgzEkSRCSPFWVyVS+Utj9v+W5aOWd78qkYjm5hrkSxYiutr2VJ7KmVbdSIcllDA9liQk2ZT0hv4vcvSx7MVIeNNc1xU1lYCyCA4zEb6GYg2K4YWTYshonUg6ptb2AqQtNfuG0UcyCixkhfY5EAeNJG0NOtY3n87z96BhwuZZ0uEHPIdF2C7pptj9ap2+F66MhLPjOTIdA==</string>
+    
+
+</resources>

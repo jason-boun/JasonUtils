@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog_shadow"
+    android:gravity="center_horizontal"
+    android:longClickable="false"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="42.0dip"
+        android:layout_gravity="center_horizontal"
+        android:background="#1a3d53"
+        android:gravity="center"
+        android:textColor="#cccccc"
+        android:textSize="16.0sp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="240dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/item_center_bg"
+        android:padding="8dip"
+        android:singleLine="true"
+        android:textColor="@color/lightgrey"
+        android:textSize="14.0dip"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/msg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#f4f4f4"
+        android:gravity="center"
+        android:padding="15dip"
+        android:textColor="#333333"
+        android:textSize="15.0sp"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="#1a3d53"
+        android:cacheColorHint="#00000000"
+        android:divider="@drawable/bg_line_h"
+        android:scrollbars="vertical"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/datepickerlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <DatePicker
+            android:id="@+id/datepicker"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:padding="10dip" />
+
+        <include layout="@layout/listview_divider_line" />
+
+        <LinearLayout
+            android:id="@+id/datepickerbtnlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/datepickerbtn_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:contentDescription="@string/content_description"
+                android:padding="15dip"
+                android:src="@drawable/ic_solar"
+                android:visibility="gone" />
+            <!-- <include layout="@layout/listview_divider_line2"/> -->
+
+            <TextView
+                android:id="@+id/datepickerbtn_btnleft"
+                style="@style/CustomDialogItemText"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="15dip" />
+
+            <!-- include layout="@layout/listview_divider_line2" / -->
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="fill_parent"
+                android:background="@drawable/shuxian" />
+
+            <TextView
+                android:id="@+id/datepickerbtn_btnright"
+                style="@style/CustomDialogItemText"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="15dip" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/listview_divider_line" />
+
+    <LinearLayout
+        android:id="@+id/bottom_btns"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#14354a"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/bottom_left_btn"
+            style="@style/CustomDialogItemText"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="10dip" 
+            android:visibility="gone" 
+            />
+
+        <include layout="@layout/listview_divider_line2" />
+        
+        <TextView
+            android:id="@+id/bottom_middle_btn"
+            style="@style/CustomDialogItemText"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="10dip" 
+            android:visibility="gone"
+            />
+        
+        <include layout="@layout/listview_divider_line2" />
+
+        <TextView
+            android:id="@+id/bottom_right_btn"
+            style="@style/CustomDialogItemText"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="10dip"
+            android:visibility="gone" 
+             />
+    </LinearLayout>
+
+</LinearLayout>
