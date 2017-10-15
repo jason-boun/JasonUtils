@@ -1,19 +1,18 @@
 package com.jason.jasonutils;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.PrintStream;
-import java.io.PrintWriter;
-import java.io.StringWriter;
-import java.lang.Thread.UncaughtExceptionHandler;
-import java.lang.reflect.Field;
-import java.util.Date;
-
 import android.content.Context;
 import android.os.Build;
 import android.os.Environment;
 
 import com.jason.jasonutils.tools.DateUtil;
+
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.PrintWriter;
+import java.io.StringWriter;
+import java.lang.Thread.UncaughtExceptionHandler;
+import java.lang.reflect.Field;
+import java.util.Date;
 
 /**
  * 收集APK崩溃后的ErrorLog信息

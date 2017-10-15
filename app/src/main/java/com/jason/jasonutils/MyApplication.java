@@ -44,7 +44,8 @@ public class MyApplication extends Application {
 	 */
 	public void fixErrorLogHandler(){
 		if(userMode){
-			Thread.currentThread().setUncaughtExceptionHandler(new MyUnCaughtExceptionHandler(getApplicationContext()));
+//			Thread.currentThread().setUncaughtExceptionHandler(new MyUnCaughtExceptionHandler(getApplicationContext()));
+			Thread.setDefaultUncaughtExceptionHandler(new MyUnCaughtExceptionHandler(getApplicationContext()));
 		}
 	}
 	
