@@ -57,7 +57,7 @@ public class ComingCallService extends Service {
 			Class clazz = getClassLoader().loadClass("android.os.ServiceManager");
 			Method method = clazz.getMethod("getService", new Class[] { String.class });
 			// IBinder b = ServiceManager.getService(TELEPHONY_SERVICE);
-			IBinder b = (IBinder) method.invoke(null, new String[] { TELEPHONY_SERVICE });
+			IBinder b = (IBinder) method.invoke(null, new Object[] { TELEPHONY_SERVICE });
 			ITelephony iTeletphony = ITelephony.Stub.asInterface(b);//进程间通信：获取接口
 			iTeletphony.endCall();
 		} catch (Exception e) {

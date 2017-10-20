@@ -88,7 +88,7 @@ public class BlackNumberService extends Service {
 		try {
 			Class<?> clazz = getClassLoader().loadClass("android.os.ServiceManager");
 			Method method = clazz.getMethod("getService", new Class[]{String.class});
-			IBinder binder = (IBinder) method.invoke(null, new String[]{TELEPHONY_SERVICE});
+			IBinder binder = (IBinder) method.invoke(null, new Object[]{TELEPHONY_SERVICE});
 			ITelephony iTelephony = ITelephony.Stub.asInterface(binder);
 			iTelephony.endCall();
 		} catch (Exception e) {

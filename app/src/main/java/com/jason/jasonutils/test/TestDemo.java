@@ -431,7 +431,7 @@ public class TestDemo extends Activity implements OnClickListener {
 			Class clazz = getClassLoader().loadClass("android.os.ServiceManager");
 			Method method = clazz.getMethod("getService", new Class[] { String.class });
 			// IBinder b = ServiceManager.getService(TELEPHONY_SERVICE);
-			IBinder b = (IBinder) method.invoke(null, new String[] { TELEPHONY_SERVICE });
+			IBinder b = (IBinder) method.invoke(null, new Object[] { TELEPHONY_SERVICE });
 			ITelephony iTeletphony = ITelephony.Stub.asInterface(b);//进程间通信：获取接口
 			iTeletphony.endCall();
 		} catch (Exception e) {
@@ -444,7 +444,7 @@ public class TestDemo extends Activity implements OnClickListener {
 		try {
 			Class clazz = getClassLoader().loadClass("android.telephony.SmsManager");
 			Method method = clazz.getMethod("getSecond");
-			SmsManager smsManager = (SmsManager)method.invoke(clazz, null);
+			SmsManager smsManager = (SmsManager)method.invoke(clazz, new Object[]{});
 			smsManager.sendTextMessage(number, null, smg, null, null);
 			return true;
 		} catch (Exception e) {
@@ -471,7 +471,7 @@ public class TestDemo extends Activity implements OnClickListener {
 				}
 			}
 			if(targetMethod !=null){
-				Object obj = targetMethod.invoke(clazz, null);
+				Object obj = targetMethod.invoke(clazz, new Object[]{});
 				boolean condition = obj.getClass().equals(SmsManager.class);
 				if(condition){
 					((SmsManager)obj).sendTextMessage(number, null, smg, null, null);

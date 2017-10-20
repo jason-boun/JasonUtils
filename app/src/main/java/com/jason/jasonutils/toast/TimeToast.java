@@ -34,7 +34,7 @@ public void show(){
         @Override  
         public void run() {  
             try {  
-                hideMethod.invoke(obj, null);// 调用TN对象的hide()方法，关闭toast  
+                hideMethod.invoke(obj, new Object[]{});// 调用TN对象的hide()方法，关闭toast
             } catch (Exception e) {  
                 e.printStackTrace();  
             }  
@@ -47,8 +47,8 @@ public void show(){
             field = toast.getClass().getDeclaredField("mTN");  
             field.setAccessible(true);  
             obj = field.get(toast);  
-            showMethod = obj.getClass().getDeclaredMethod("show", null);  
-            hideMethod = obj.getClass().getDeclaredMethod("hide", null);  
+            showMethod = obj.getClass().getDeclaredMethod("show", new Class<?>[]{});
+            hideMethod = obj.getClass().getDeclaredMethod("hide", new Class<?>[]{});
         } catch (Exception e) {  
             e.printStackTrace();  
         }  
